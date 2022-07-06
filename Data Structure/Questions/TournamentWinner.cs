@@ -34,14 +34,10 @@ Optimal Space & Time Complexity
 O(n) time | O(k) space - where n is the number of competitions and k is the number of teams"
 */
 
-using System.Collections.Generic;
-using System;
-using System.Linq;
-namespace HelloWorld;
+namespace AlgoExpert;
 
 public class TournamentWinner
 {
-
     public string FindTournamentWinner(List<List<string>> competitions, List<int> results)
     {
         Dictionary<string, int> teams = new Dictionary<string, int>();

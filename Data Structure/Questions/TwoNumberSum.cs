@@ -27,8 +27,7 @@ Optimal Space & Time Complexity
 O(n) time | O(n) space - where n is the length of the input array"
 */
 
-using System;
-namespace HelloWorld;
+namespace AlgoExpert;
 
 public class TwoNumberSum
 {

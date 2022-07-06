@@ -1,4 +1,4 @@
-﻿namespace HelloWorld;
+﻿namespace AlgoExpert;
 
 class Program
 {
@@ -6,10 +6,19 @@ class Program
     {
         Console.WriteLine("Hello World!");
         /* 1. Two Number Sum */
-        var array = new int[] { 3, 5, -4, 8, 11, 1, -1, 6 };
+        var array1 = new int[] { 3, 5, -4, 8, 11, 1, -1, 6 };
         var targetSum = 10;
-        var result1 = TwoNumberSum.FindTwoNumberSum(array, targetSum);
+        var result1 = TwoNumberSum.FindTwoNumberSum(array1, targetSum);
         Console.WriteLine(string.Join(",", result1));
+
+        /* 2. Validate Subsequence*/
+        var array2 = new List<int> { 5, 1, 22, 25, 6, -1, 8, 10 };
+        var sequence = new List<int> { 1, 6, -1, 10 };
+        var result2 = ValidateSubsequence.IsValidSubsequenceSolutionOne(array2, sequence);
+        Console.WriteLine(result2);
+        result2 = ValidateSubsequence.IsValidSubsequenceSolutionTwo(array2, sequence);
+        Console.WriteLine(result2);
+
 
         /* 4. Tournament Winner*/
         TournamentWinner tournamentWinner = new TournamentWinner();
