@@ -71,6 +71,6 @@ public class TournamentWinner
                 }
             }
         }
-        return teams.OrderByDescending(o=>o.Value).FirstOrDefault().Key;
+        return teams.OrderByDescending(o => o.Value).FirstOrDefault().Key;
     }
 }

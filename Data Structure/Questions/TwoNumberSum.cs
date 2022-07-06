@@ -30,16 +30,18 @@ O(n) time | O(n) space - where n is the length of the input array"
 using System;
 namespace HelloWorld;
 
-public class TwoNumberSum {
-	public static int[] FindTwoNumberSum(int[] array, int targetSum) {		
-			for(int i = 0; i<array.Length; i++)
-			{
-				for(int j=i+1; j<array.Length; j++)
-				{
-					if(targetSum == array[i]+array[j])
-						return new int[]  { array[i],array[j] };
-				}
-			}
-			return new int[0];
-		}
+public class TwoNumberSum
+{
+    public static int[] FindTwoNumberSum(int[] array, int targetSum)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            for (int j = i + 1; j < array.Length; j++)
+            {
+                if (targetSum == array[i] + array[j])
+                    return new int[] { array[i], array[j] };
+            }
+        }
+        return new int[0];
+    }
 }
