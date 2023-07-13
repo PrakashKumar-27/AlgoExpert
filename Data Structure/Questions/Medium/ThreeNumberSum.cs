@@ -31,6 +31,7 @@ using AlgoExpert;
 
 public class ThreeNumberSum
 {
+    //Don't use this method while the interview
     public static List<int[]> ThreeNumberSumSolutionOne(int[] array, int targetSum)
     {
         Array.Sort(array);
